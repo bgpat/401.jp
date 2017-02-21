@@ -1,0 +1,11 @@
+/*
+!/.gitignore
+!/LICENSE
+!/etc/
+
+/etc/*
+!/etc/motd
+!/etc/ssh
+
+/etc/ssh/*
+!/etc/ssh/sshd_config
