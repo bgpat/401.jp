@@ -16,7 +16,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # set a fancy prompt (non-color, overwrite the one in /etc/profile)
-PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+PS1='\[\033[32m\]${debian_chroot:+($debian_chroot)}\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 
 # Commented out, don't overwrite xterm -T "title" -n "icontitle" by default.
 # If this is an xterm set the title to user@host:dir
